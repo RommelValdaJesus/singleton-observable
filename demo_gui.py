@@ -129,7 +129,7 @@ ttk.Button(
     tab_aerolinea,
     text="Agregar vuelo de prueba",
     bootstyle="success",
-    command=lambda: gestor_aerolinea.registrar_vuelo(
+    command=lambda: gestor_aerolinea.registrar(
         {"origen": "Sucre", "destino": "Santa Cruz", "precio": 560.0}
     ),
 ).pack(pady=8)
@@ -157,7 +157,7 @@ ttk.Button(
     tab_joyeria,
     text="Agregar joya de prueba",
     bootstyle="success",
-    command=lambda: gestor_joyeria.registrar_joya(
+    command=lambda: gestor_joyeria.registrar(
         {"tipo": "Anillo", "quilates": 18}
     ),
 ).pack(pady=8)
